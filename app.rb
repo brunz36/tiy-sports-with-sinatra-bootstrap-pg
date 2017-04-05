@@ -13,6 +13,7 @@ ActiveRecord::Base.establish_connection(
 require_relative 'team'
 require_relative 'player'
 require_relative 'membership'
+require_relative 'game'
 
 after do
   ActiveRecord::Base.connection.close
@@ -20,6 +21,7 @@ end
 
 get '/' do
   @teams = Team.all
+  @games = Game.all
 
   erb :home
 end
