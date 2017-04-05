@@ -10,17 +10,16 @@ ActiveRecord::Base.establish_connection(
   database: "tiy-sports"
 )
 
-after do
-  ActiveRecord::Base.connection.close
-end
-
 require_relative 'team'
 require_relative 'player'
 require_relative 'membership'
 
+after do
+  ActiveRecord::Base.connection.close
+end
+
 get '/' do
   @teams = Team.all
-  @players = Player.all
 
   erb :home
 end
