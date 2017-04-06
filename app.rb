@@ -20,6 +20,9 @@ after do
 end
 
 get '/' do
+  page = (params["page"]).to_i
+  offset = (page - 1) * 3
+
   @teams = Team.all
   @games = Game.all
 
