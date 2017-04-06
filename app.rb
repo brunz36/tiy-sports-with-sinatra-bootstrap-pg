@@ -23,6 +23,7 @@ get '/' do
   page = (params["page"]).to_i
   offset = (page - 1) * 3
 
+  @teams_count = Team.all
   @teams = Team.all.limit(3).offset(offset)
   @games = Game.all
 
