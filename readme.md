@@ -8,9 +8,11 @@
   - Sinatra
   - Postgress
   - Active Records
+  - Bootstrap
 - The major features of the application are:
   - Dynamic Web pages
   - SQL Manipulation
+  - Pagination
 
 ## DEMO
-![](https://raw.githubusercontent.com/brunz36/tiy-database-with-sinatra-and-postgres-class/master/docs/tiy-database-with-sinatra-and-postgres-class.gif)
+![](https://raw.githubusercontent.com/brunz36/tiy-sports-with-sinatra-bootstrap-pg/master/docs/tiy-sports-with-sinatra-bootstrap-pg.gif)
